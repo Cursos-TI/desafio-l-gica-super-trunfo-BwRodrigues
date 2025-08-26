@@ -6,20 +6,41 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    char estado;  //Uma letra de A ate H.
+    char codigo[5]; // Exemplo = A01.
+    char cidade[50]; // Nome da Cidade.
+    int populacao, pontos;
+    float area, pib;
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+// Entrada de dados.
+
+printf ("Digite o seu estado (A-H)."); 
+scanf ( " %c", &estado); //fiquei 2 dias preso em um /n que não fazia avançar para o proximo comando.
+
+printf ("Crie seu codigo 1° Letra do seu estado + 1 numero de 01 a 04.\n");
+scanf ("%s", codigo);
+
+printf ("Qual o nome de sua cidade sem espaço?\n");
+scanf("%s", cidade);
+
+printf ("população: \n");
+scanf ("%d", &populacao);
+
+printf ("Area em Km2: \n");
+scanf ("%f", &area );
+
+printf ("PIB: \n");
+scanf ("%f", &pib);
+
+printf ("Quantidade de pontos turisticos?");
+scanf ("%d", &pontos);
+
+
+return 0;
+
+
+   
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
@@ -31,6 +52,11 @@ int main() {
     // } else {
     //     printf("Cidade 2 tem maior população.\n");
     // }
+
+        /* code */
+
+    
+
 
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
