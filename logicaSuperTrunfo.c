@@ -15,7 +15,7 @@ int main() {
 
 // Entrada de dados.
 
-printf ("---Cadastre a sua 1° carta.---\n\n"); //**Lembrete pessoal, conferir sempre ponto e virgula. 
+printf ("---Cadastre a sua primeira carta.---\n\n"); //**Lembrete pessoal, conferir sempre ponto e virgula. 
 
 printf ("Digite o seu estado (A-H).\n"); 
 scanf ( " %c", &estado1); //fiquei 2 dias preso em um /n (barra ao contrario) que não fazia avançar para o proximo comando.
@@ -61,6 +61,16 @@ scanf ("%f", &pib2);
 
 printf ("Quantidade de pontos turisticos?\n");
 scanf ("%d", &pontos2);
+
+printf("\n --- Carta 01 ---\n");
+printf("Estado: %c "), estado1;
+printf("Codigo: %s "), codigo1;
+printf("Cidade: %s \n"), cidade1;
+printf("População: %d \n"), populacao1;
+printf("Área: %f \n"), area1;
+printf("PIB: %f \n"), pib1;
+printf("Pontos turisticos: %d \n"), pontos1;
+
 
 
 return 0;
