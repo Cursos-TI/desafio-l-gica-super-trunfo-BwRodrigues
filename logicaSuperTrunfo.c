@@ -6,35 +6,61 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-
-    char estado;  //Uma letra de A ate H.
-    char codigo[5]; // Exemplo = A01.
-    char cidade[50]; // Nome da Cidade.
-    int populacao, pontos;
-    float area, pib;
+// Cadastro de variaveis de carta 01 e carta 02.
+    char estado1, estado2;  //Uma letra de A ate H.
+    char codigo1[5], codigo2[5]; // Exemplo = A01.
+    char cidade1[50],cidade2[50]; // Nome da Cidade.
+    int populacao1, pontos1, populacao2, pontos2;
+    float area1, pib1, area2, pib2;
 
 // Entrada de dados.
 
-printf ("Digite o seu estado (A-H)."); 
-scanf ( " %c", &estado); //fiquei 2 dias preso em um /n que não fazia avançar para o proximo comando.
+printf ("---Cadastre a sua 1° carta.---\n\n"); //**Lembrete pessoal, conferir sempre ponto e virgula. 
+
+printf ("Digite o seu estado (A-H).\n"); 
+scanf ( " %c", &estado1); //fiquei 2 dias preso em um /n (barra ao contrario) que não fazia avançar para o proximo comando.
 
 printf ("Crie seu codigo 1° Letra do seu estado + 1 numero de 01 a 04.\n");
-scanf ("%s", codigo);
+scanf ("%s", codigo1);
 
 printf ("Qual o nome de sua cidade sem espaço?\n");
-scanf("%s", cidade);
+scanf("%s", cidade1);
 
 printf ("população: \n");
-scanf ("%d", &populacao);
+scanf ("%d", &populacao1);
 
 printf ("Area em Km2: \n");
-scanf ("%f", &area );
+scanf ("%f", &area1 );
 
 printf ("PIB: \n");
-scanf ("%f", &pib);
+scanf ("%f", &pib1);
 
-printf ("Quantidade de pontos turisticos?");
-scanf ("%d", &pontos);
+printf ("Quantidade de pontos turisticos?\n");
+scanf ("%d", &pontos1);
+
+//Entrada carta numero 02
+
+printf ("---Cadastre a segunda carta.---\n\n");
+printf ("Digite o seu estado (A-H).\n"); 
+scanf ( " %c", &estado2); //fiquei 2 dias preso em um /n que não fazia avançar para o proximo comando.
+
+printf ("Crie seu codigo 1° Letra do seu estado + 1 numero de 01 a 04.\n");
+scanf ("%s", codigo2);
+
+printf ("Qual o nome de sua cidade sem espaço?\n");
+scanf("%s", cidade2);
+
+printf ("população: \n");
+scanf ("%d", &populacao2);
+
+printf ("Area em Km2: \n");
+scanf ("%f", &area2 );
+
+printf ("PIB: \n");
+scanf ("%f", &pib2);
+
+printf ("Quantidade de pontos turisticos?\n");
+scanf ("%d", &pontos2);
 
 
 return 0;
