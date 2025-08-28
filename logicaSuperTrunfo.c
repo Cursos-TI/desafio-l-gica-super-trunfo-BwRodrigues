@@ -63,15 +63,22 @@ printf ("Quantidade de pontos turisticos?\n");
 scanf ("%d", &pontos2);
 
 printf("\n --- Carta 01 ---\n");
-printf("Estado: %c "), estado1;
-printf("Codigo: %s "), codigo1;
-printf("Cidade: %s \n"), cidade1;
-printf("População: %d \n"), populacao1;
-printf("Área: %f \n"), area1;
-printf("PIB: %f \n"), pib1;
-printf("Pontos turisticos: %d \n"), pontos1;
+printf("Estado: %c \n", estado1);
+printf("Codigo: %s \n", codigo1);
+printf("Cidade: %s \n", cidade1);
+printf("População: %d \n", populacao1);
+printf("Área: %f \n", area1);
+printf("PIB: %f \n", pib1);
+printf("Pontos turisticos: %d \n", pontos1);
 
-
+printf("\n --- Carta 02 ---\n");
+printf("Estado: %c \n", estado2);
+printf("Codigo: %s \n", codigo2);
+printf("Cidade: %s \n", cidade2);
+printf("População: %d \n", populacao2);
+printf("Área: %f \n", area2);
+printf("PIB: %f \n", pib2);
+printf("Pontos turisticos: %d \n", pontos2);
 
 return 0;
 
