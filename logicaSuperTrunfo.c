@@ -96,6 +96,55 @@ printf("Pontos turisticos: %d \n", pontos2);
 printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
 printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
+
+// >>>  Comparação das cartas e placar básico
+int placar1 = 0;
+int placar2 = 0;
+
+printf("\n--- Comparação por atributo ---\n");
+
+// População
+if (populacao1 > populacao2) { printf("População: %s venceu.\n", cidade1); placar1++; }
+else if (populacao2 > populacao1) { printf("População: %s venceu.\n", cidade2); placar2++; }
+else { printf("População: Empate.\n"); }
+
+// Área
+if (area1 > area2) { printf("Área: %s venceu.\n", cidade1); placar1++; }
+else if (area2 > area1) { printf("Área: %s venceu.\n", cidade2); placar2++; }
+else { printf("Área: Empate.\n"); }
+
+// PIB total
+if (pib1 > pib2) { printf("PIB total: %s venceu.\n", cidade1); placar1++; }
+else if (pib2 > pib1) { printf("PIB total: %s venceu.\n", cidade2); placar2++; }
+else { printf("PIB total: Empate.\n"); }
+
+// Pontos turísticos
+if (pontos1 > pontos2) { printf("Pontos turísticos: %s venceu.\n", cidade1); placar1++; }
+else if (pontos2 > pontos1) { printf("Pontos turísticos: %s venceu.\n", cidade2); placar2++; }
+else { printf("Pontos turísticos: Empate.\n"); }
+
+// Densidade (menor vence)
+if (densidade1 < densidade2) { printf("Densidade (menor vence): %s venceu.\n", cidade1); placar1++; }
+else if (densidade2 < densidade1) { printf("Densidade (menor vence): %s venceu.\n", cidade2); placar2++; }
+else { printf("Densidade: Empate.\n"); }
+
+// PIB per capita
+if (pib_per_capita1 > pib_per_capita2) { printf("PIB per capita: %s venceu.\n", cidade1); placar1++; }
+else if (pib_per_capita2 > pib_per_capita1) { printf("PIB per capita: %s venceu.\n", cidade2); placar2++; }
+else { printf("PIB per capita: Empate.\n"); }
+
+// Resultado final
+printf("\n--- Placar Geral ---\n");
+printf("%s: %d ponto(s) | %s: %d ponto(s)\n", cidade1, placar1, cidade2, placar2);
+
+if (placar1 > placar2) {
+    printf("🏆 Cidade vencedora: %s\n", cidade1);
+} else if (placar2 > placar1) {
+    printf("🏆 Cidade vencedora: %s\n", cidade2);
+} else {
+    printf("🤝 Empate geral entre %s e %s.\n", cidade1, cidade2);
+}
+
 return 0;
 
 
